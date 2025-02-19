@@ -1,0 +1,75 @@
+/* Import google font  */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Tajawal", sans-serif;
+}
+
+.content .form{
+    width: 632px;
+    background: #ECECF7;
+    border-radius: 20px;
+}
+.content .form h2{
+    font-size: 31px;
+    font-weight: 700;
+    color: #2F2B73;
+}
+.content .form .submit button{
+    width: 270px;
+    background-color: #2F2B73;
+    color: white;
+    border: none;
+}
+.content .form .position-relative input{
+    border: none;
+}
+.content .form .position-relative .fa-user{
+    transform: translate(24px, -50%);
+}
+.content .form .position-relative .fa-eye-slash{
+    transform: translate(30px, -50%);
+}
+.content .form .position-relative .fa-eye{
+    transform: translate(30px, -50%);
+}
+.log-in .user, .password{
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+}
+.log-in i{
+    color: #A7A6DD;
+}
+.log-in #password, #email{
+    background-color: #FDFDFF !important;
+    border: 1px solid #DFE2E3;
+}
+.log-in input:focus{
+    outline: 0;
+    background-color: #FDFDFF !important;
+
+}
+/* md screen  */
+@media (min-width: 768px) and (max-width: 992px){
+    
+}
+/* sm screen  */
+@media (max-width: 768px){
+    .content .form{
+        width: 100%;
+    }
+    .content .form .submit {
+        width: 100%;
+    }
+    .content .form .submit a {
+        width: 100%;
+    }
+    .content .form .submit button{
+        padding: .25rem !important;
+        width: 100%;
+    }
+    
+}

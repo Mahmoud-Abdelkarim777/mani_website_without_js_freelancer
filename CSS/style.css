@@ -1,0 +1,613 @@
+/* Import google font  */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Tajawal", sans-serif;
+}
+/* global style for titles */
+/* ************************************************************************************** */
+.container-title{
+    border-right: 4px solid #2F2B73;
+    padding-right: 10px;
+    color: #2F2B73;
+}
+/* ************************************************************************************** */
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+
+/* start hero section  */
+/* .hero{
+    background-image: url('../img/hero section (3).svg');
+    background-size: cover;
+    height: 622px;
+    width: 100%;
+    position: relative;
+    margin-top: 84px;
+} */
+
+.hero {
+    position: relative;
+    background-image: url('../img/hero section (3).svg');
+    background-size: cover;
+    height: 622px;
+    width: 100%;
+    margin-top: 84px;
+    background-color: rgba(255, 255, 255, 0.15); /* لون أبيض شفاف */
+    background-blend-mode: overlay; /* يمزج اللون مع الخلفية */
+}
+
+.hero .content{
+    height: 622px;
+}
+.hero .content .hero-title{
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+.hero .content .hero-subtitle{
+    font-size: 85px;
+    font-weight: 700;
+    color: #2F2B73;
+}
+.hero .bttn{
+    background-color: #2F2B73;
+    color: white !important;
+    font-size: 20px;
+    font-weight: 700;
+    width: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    border-radius: 10px !important;
+}
+.hero .hero-info{
+    position: absolute;
+    bottom: -12%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75%;
+    height: 100px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 12px 0px #2F2B731F;
+
+}
+.hero .hero-info .item{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.hero .hero-info .item div:first-child{
+    padding: 15px;
+    background-color: #EFF1FF;
+    border-radius: 10px;
+}
+.hero .hero-info .item img{
+    width: 32px;
+}
+    
+.hero .hero-info .item .num{
+    font-size: 32px;
+    font-weight: 700;
+}
+.hero .hero-info .item .txt{
+    font-size: 25px;
+    font-weight: 400;
+}
+/* md screen  */
+@media (min-width: 768px) and (max-width: 992px){
+    .hero{
+        background-image: url('../img/hero-md.svg');
+        background-size: cover;
+        height: 360px;
+        width: 100%;
+        margin-top: 64px;
+    }
+    .hero .bttn{
+        background-color: #2F2B73;
+        font-size: 14px;
+        width: 156px;
+    }
+    .hero .content{
+        height: 360px;
+    }
+    .hero .content .hero-title{
+        font-size: 24px;
+        
+    }
+    .hero .content .hero-subtitle{
+        font-size: 52px;
+    }
+    .hero .hero-info{
+        width: 775px;
+        height: 80px;
+        bottom: -15%;
+    }
+    .hero .hero-info .item img{
+        width: 23px;
+    }
+
+    .hero .hero-info .item .num{
+        font-size: 28px;
+    }
+    .hero .hero-info .item .txt{
+        font-size: 20px;
+    }
+}
+/* sm screen  */
+@media (max-width: 768px){
+    .hero{
+        background-image: url('../img/hero-sm.svg');
+        background-size: cover;
+        height:183px;
+        width: 100% ;
+        margin-top: 48px;
+    }
+    .hero .bttn{
+        font-size: 12px;
+        width: 112.56px;
+        padding-left: .25rem !important;
+        padding-right: .25rem !important;
+        height: 28px;
+        border-radius: 8px !important;
+    }
+    .hero .content{
+        height: 183px;
+    }
+    .hero .content .hero-title{
+        font-size: 12.26px;
+        
+    }
+    .hero .content .hero-subtitle{
+        font-size: 23px;
+    }
+    .hero .hero-info{
+        width: 95%;
+        height: 50px;
+        bottom: -20%;
+        
+    }
+    .hero .hero-info .item{
+        gap: 5px;
+    }
+    .hero .hero-info .item div:first-child{
+        padding: 4px;
+        border-radius: 4px;
+        height: 24px !important;
+        width: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .hero .hero-info .item img{
+        width: 12px;
+    }
+
+    .hero .hero-info .item .num{
+        font-size: 14px;
+    }
+    .hero .hero-info .item .txt{
+        font-size: 10px;
+    }
+}
+/* end hero section  */
+/* start about  */
+.about{
+    margin-top: 9rem;
+    height: 501px;
+    background: #EFF1FF;
+    /* background-image: url(../img/عن\ الشركة.svg); */
+    /* background-size: cover; */
+}
+
+.about .container-title{
+    font-size: 39px;
+    font-weight: 700;
+}
+.about .bttn{
+    width: 270px;
+    background-color: #2F2B73;
+    color: white !important;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    border-radius: 10px !important;
+}
+.about .container-about{
+    height: 437px;
+    width: 100%;
+}
+.about .container-about .container-txt{
+    width: 95%;
+    text-align: justify;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 36px;
+}
+.about .container-img {
+    width: 41%;
+}
+.about .container-img img{
+    /* height: 458px; */
+    width: 100%;
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* left: 5%; */
+}
+/* md screen  */
+@media (min-width: 768px) and (max-width: 992px){
+    .about{
+        height: 338px;
+    }
+    .about .container-title{
+        font-size: 22px;
+        font-weight: 700;
+    }
+    .about .bttn{
+        width: 160px;
+        background-color: #2F2B73;
+        color: white !important;
+        font-size: 14px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .about .container{
+        height: 324px;
+    }
+    .about .container-about{
+        height: 301px;
+    }
+    .about .container-about .container-txt{
+        width: 418px;
+        text-align: right;
+        font-size: 14px;
+        line-height: 22.4px;
+    }
+    /* .about .container-img{
+        height: 148px;
+    } */
+    .about .container-img img{
+        height: 246px;
+        width: 273px;
+    }
+    
+}
+#custom{
+    height: 100%; 
+    width: 61%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+/* sm screen  */
+@media (max-width: 768px){
+    .about{
+        margin-top: 4rem;
+        height: 450px;
+        /* background-image: url(../img/عن\ الشركة\ sm.svg); */
+    }
+    .about .container-title{
+        font-size: 24px;
+    }
+    .about .bttn{
+        width: 120px;
+        background-color: #2F2B73;
+        color: white !important;
+        font-size: 12px;
+        font-weight: 700;
+        text-align: center;
+        padding: .25rem !important;
+        height: 28px;
+        border-radius: 8px !important;
+    }
+    .about .container-about{
+        height: 250px;
+        width: 100%;
+    }
+    .about .container-about .container-txt{
+        width: 97%;
+        /* height: 106px; */
+        text-align: justify;
+        font-size: 12px;
+        line-height: 19.2px;
+    }
+    .about .container-img{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .about .container-img img{
+        /* height: 149px ; */
+        width: 220px;
+    }
+    #custom{
+        height: 50%; 
+        width: 100%; 
+        display: flex; 
+        justify-content: start; 
+        align-items: start;
+    }
+    #content-div{
+        align-items: flex-start !important;
+    }
+}
+/* end about  */
+/* start why are we  */
+.why{
+    background-color: white;
+    padding: 2rem 0;
+}
+.why .container .content .spicial .container-img #lab{
+    height: 490px;
+    /* width: 100%; */
+}
+.why .container-title{
+    font-size: 39px;
+    font-weight: 700;
+}
+
+.why h4{
+    font-size: 31px;
+    font-weight: 500;
+}
+
+.why p{
+    font-size: 20px;
+    font-weight: 400;
+    /* line-height: 35.8px; */
+    text-align: justify;
+}
+.why .img-col{
+    height: 490px;
+}
+/* .why .container-info{
+    gap: 1.9rem;
+} */
+/* md screen  */
+@media (min-width: 768px) and (max-width: 992px){
+    .why{
+        height: 750px;
+    }
+    .why .container-title{
+        font-size: 31px;
+        font-weight: 700;
+    }
+    .why h4{
+        font-size: 25px;
+    }
+    .why .container-info{
+        width: 100% !important;
+    }
+    .why p{
+        font-size: 15px;
+        line-height: 25.2px;
+        width: 75% !important;
+    }
+    .why .container-img{
+        width: 65% !important;
+    }
+    .why .img-col{
+        height: 700px;
+    }
+    .why .container .content .spicial .container-img #lab{
+        height: 300px;
+    }
+}
+/* sm screen  */
+@media (max-width: 768px){
+    .why{
+        /* height: 690px; */
+        overflow: hidden;
+        padding-top: 0 !important;
+        margin-top: 20px !important;
+    }
+    .why .container-title{
+        font-size: 24px;
+    }
+    .why h4{
+        font-size: 16px;
+    }
+    .why .container-info{
+        width: 100% !important;
+    }
+    .why .content .spicial{
+        flex-direction: column-reverse !important;
+    }
+    .why p{
+        font-size: 12px;
+        line-height: 19.2px;
+        /* width: 75% !important; */
+    }
+    .why .container-img{
+        width: 100% ;
+        
+    }
+    .why .container-img img{
+        width: 103% !important;
+        position: relative;
+        height: 338px;
+    }
+    .why .container .content .spicial .container-img #lab{
+        height: 321px;
+        width: 331px;
+        margin-top: 20px;
+        border-radius: 28px 0 0 25px;
+    }
+    .why .img-sm{
+        height: 691px;
+        width: 67px;
+    }
+}
+/* end why are we  */
+/* start service  */
+.accordion-button::after{
+    background: none;
+}
+.service .accordion .accordion-item{
+    border-radius: 15px;
+    border: none;
+}
+.service .accordion .accordion-item a{
+    text-decoration: none;
+}
+.service .accordion .accordion-item button{
+    border-radius: 15px;
+    background-color: #ECECF7;
+}
+.accordion-button:focus{
+    box-shadow: none;
+}
+.service .container-title{
+    font-size: 39px;
+    font-weight: 700;
+}
+.service .col-lg-3{
+    width: 32% !important;
+}
+.accordion-button::after{
+    margin: 0 !important;
+    rotate: 90deg;
+}
+
+
+.service button{
+    font-size: 15px;
+    font-weight: 700;
+    text-align: right;
+}
+.service .arrow{
+    color: #2F2B73;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* md screen  */
+@media (min-width: 768px) and (max-width: 992px){
+    .service .col-md-5{
+        width: 48% !important;
+    }
+    .service .container-title{
+        font-size: 31px ;
+    }
+    .service button{
+        font-size: 14px;
+    }
+}
+/* sm screen  */
+@media (max-width: 768px){
+    .service .col-12{
+        width: 100% !important;
+    }
+    .service .container-title{
+        font-size: 24px;
+    }
+    .service button{
+        font-size: 14px;
+    }
+}
+/* end service  */
+/* start section booked  */
+.booked{
+    background: linear-gradient(180deg, #312E75 0%, #736FC4 100%);
+    /* height: 260px; */
+    height: 350px;
+    background-image: url(../img/احجز\ استشارتك.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.booked .bttn{
+    display: block;
+    width: 270px;
+    background-color: #2F2B73;
+    color: white !important;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    border-radius: 10px !important;
+}
+.booked .txt p{
+    font-size: 39px;
+    font-weight: 700;
+    line-height: 62px;
+    color: white;
+}
+/* md screen  */
+@media (min-width: 768px) and (max-width: 992px){
+    .booked{
+        height: 265px;
+        /* height: 190px; */
+    }
+    .booked .bttn{
+        width: 197px;
+        background-color: #2F2B73;
+        color: white !important;
+        font-size: 12px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .booked .txt p{
+        font-size: 26px;
+        line-height: 41.6px;
+    }
+}
+/* sm screen  */
+@media (max-width: 768px){
+    .booked{
+        height: 145px;
+        padding: 1rem 0 !important;
+        /* height: 130px; */
+    }
+    .booked .bttn{
+        width: 135px;
+        background-color: #2F2B73;
+        color: white !important;
+        font-size: 12px;
+        font-weight: 700;
+        text-align: center;
+        padding: .25rem !important;
+        height: 28px;
+        border-radius: 8px !important;
+    }
+    .booked .txt p{
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+/* end section booked  */
+/* start partener section  */
+.partener{
+    background-color: #EFF1FF;
+}
+.partener .container-title{
+    font-size: 39px;
+    font-weight: 700;
+}
+/* md screen  */
+@media (min-width: 768px) and (max-width: 992px){
+    .partener .container-title{
+        font-size: 31px;
+    }
+}
+/* sm screen  */
+@media (max-width: 768px){
+    .partener .container-title{
+        font-size: 28px;
+    }
+}
+/* end partener section  */

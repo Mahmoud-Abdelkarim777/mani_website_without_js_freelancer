@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأسئلة الشائعة</title>
+    
+    <!-- روابط Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    <!-- EXTERNAL FILE CSS  -->
+    
+    <!-- روابط Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    
+    <!-- خطوط Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet"/>
+    <!-- external file css  -->
+    <link rel="stylesheet" href="../CSS/nav-footer.css">
+    <link rel="stylesheet" href="../CSS/common-questions.css">
+</head>
+<body>
+    <!-- start header  -->
+    <header class="header container">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
+            <div class="container ">
+                <a class="navbar-brand me-0" href="../index.html">
+                    <img src="../img/logo.svg" alt="photo">
+                </a>
+                <!-- Offcanvas Trigger Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center " id="navbarNav">
+                    <ul class="navbar-nav gap-2">
+                        <li class="nav-item">
+                            <a class="nav-link  " aria-current="page" href="../index.html">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./about.html">عن الشركة</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./services.html">الخدمات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact-us.html">تواصل معنا</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="d-flex gap-5 info-lang">
+                    <!-- <div class="lang d-flex align-items-center gap-1">
+                        <p class="mb-0 language-en">English</p>
+                        <div class="global">
+                            <img src="./img/globe.svg" alt="global">
+                        </div>
+                    </div> -->
+                    <div>
+                        <a href="../pages/log-in.html" class="sign-up text-decoration-none text-dark border px-4 py-2">تسجيل الدخول</a>
+                    </div>
+                </div>
+                <div class="logo-md">
+                    <a href="../index.html">
+                        <img src="../img/logo.svg" alt="photo">
+                    </a>
+                </div>
+                <div class="register-md">
+                    <a href="../pages/log-in.html" class="sign-up text-decoration-none text-dark border  px-4 py-2 ">تسجيل الدخول</a>
+                </div>
+            </div>
+                <!-- Offcanvas Content -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">القائمة</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link  " aria-current="page" href="../index.html">الرئيسية</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="../pages/about.html">عن الشركة</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/services.html">الخدمات</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/contact-us.html">تواصل معنا</a>
+                            </li>
+                            
+                        </ul>
+                        <!-- Language and Login Options -->
+                        <div class="d-flex gap-5 mt-3 Language-and-Login-Options">
+                            <div class="lang d-flex gap-1">
+                                <p class="mb-0 language-en">English</p>
+                                <div class="global">
+                                    <img src="./img/globe.svg" alt="global">
+                                </div>
+                            </div>
+                            
+                            <div class="mt-2">
+                                <a href="../pages/log-in.html" class="sign-up d-block d-md-none text-decoration-none text-dark border px-4 py-2">تسجيل الدخول</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- end header  -->
+    <!-- start section content  -->
+    <div class="content container mt-5">
+    <h2 class=" heropara " >الأسئلة الشائعة حول خدماتنا القانونية</h2>
+    <!-- الدروب داون -->
+    <div class="accordion" id="servicesAccordion">
+        <!-- <div class="card">
+            <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                    <button class="accordion-button mb-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" onclick="toggleChevron(this)">
+                        ما هي الخدمات القانونية التي يقدمها المكتب؟
+                        <i class="fas fa-chevron-left"></i> 
+                    </button>
+                </h2>
+            </div>
+
+            <div id="collapseOne" class="collapse " aria-labelledby="headingOne" >
+                <div class="card-body">
+                    <p>
+                        يقدم المكـتب مجموعـة مـن الخدمـات القانونيـة، بما في ذلك الاستشـارات القـانـونيـة، تمثيل العملاء في القضايا المدنية والجنائية، صياغة ومراجعة العقود، قضايا الأحوال الشخصية، قضايا العمل، والتحكيم.
+                    </p>
+                    
+                </div>
+            </div>
+        </div> -->
+    </div>
+    
+    
+    
+    </div>
+    <!-- end section content  -->
+    <!-- start footer  -->
+    <footer class="footer position-relative">
+        <div class="background position-absolute top-50 start-50 " style="background-color:  #1C1A4E;">
+            <img src="../img/logo-footer-lg.svg" alt="photo">
+        </div>
+        <div class="container">
+            <div class="content d-flex justify-content-between align-items- center   flex-md-row flex-lg-row   position-relative ">
+                <div class="footer-comunication mb-5">
+                    <div class="footer-logo mb-4">
+                        <img class="w-100" src="../img/logo-footer.svg" alt="photo">
+                    </div>
+                    <div class="icons">
+                        <a href="https://wa.me/966502252450" class="text-decoration-none ">
+                            <img src="../img/whats.svg" alt="photo" class="icon mb-md-3 mb-lg-3 mb-sm-0 me-0">
+                        </a>
+                        <a  href="https://x.com/manilawsa" target="_blank" class="text-decoration-none ">
+                            <img src="../img/twitter.svg" alt="photo" class="icon mb-md-3 mb-lg-3 mb-sm-0 me-2">
+                        </a>
+                        <a href="https://www.linkedin.com/company/mani-lawsa/?viewAsMember=true" target="_blank" class="text-decoration-none ">
+                            <img src="../img/linkidin.svg" alt="photo" class="icon mb-md-3 mb-lg-3 mb-sm-0 me-2">
+                        </a>
+                        <a href="https://www.facebook.com/mani.lawsa" target="_blank" class="text-decoration-none ">
+                            <img src="../img/facebook.svg" alt="photo" class="icon me-2 me-md-0">
+                        </a>
+                        <a href="https://www.instagram.com/manilawsa?igsh=MXI1MWR0bDhscHhueQ==" target="_blank" class="text-decoration-none ">
+                            <img src="../img/insta.svg" alt="photo" class="icon me-2">
+                        </a>
+                        <a href="https://www.tiktok.com/@mani.lawsa" target="_blank" class="text-decoration-none ">
+                            <img src="../img/tictok.svg" alt="photo" class="icon me-2">
+                        </a>
+                    </div>
+                </div>
+                <div class="">
+                    <h4 class="mb-4 mb-md-5" data-attr="quick-links-title">روابط سريعة</h4>
+                    <div class="4 d-flex flex-column ">
+                        <a href="../index.html" class="text-decoration-none mb-4 " data-attr="link-home"><p class="mb-0">الرئيسية</p></a>
+                        <a href="./about.html" class="text-decoration-none mb-4  " data-attr="link-about"><p class="mb-0">عن الشركة</p></a>
+                        <a href="./services.html" class="text-decoration-none mb-4  " data-attr="link-services"><p class="mb-0">الخدمات</p></a>
+                        <a href="./contact-us.html" class="text-decoration-none mb-4  " data-attr="link-contact"><p class="mb-0">تواصل معنا</p></a>
+                        <a href="./common-questions.html" class="text-decoration-none mb-4  " data-attr="link-contact"><p class="mb-0">الأسئلة الشائعة</p></a>
+                    </div>
+                </div>
+                <div class="">
+                    <h4 class="mb-4 mb-md-5" data-attr="contact-info-title">معلومات الاتصال</h4>
+                    <div class="d-flex flex-column  ">
+                        <div class="d-flex justify-content-start align-items-center gap-3 mb-4">
+                            <img src="../img/location icon.svg" alt="photo" data-attr="location-icon">
+                            <p class="m-0" data-attr="location-text">الـــــرياض - الخبــــــر - جــــــــدة</p>
+                        </div>
+                        <div class="d-flex justify-content-start align-items-center gap-3 mb-4">
+                            <img src="../img/phone icon.svg" alt="photo" data-attr="phone-icon">
+                            <a href="https://wa.me/966502252450" class="text-decoration-none" target="_blank" data-attr="phone-link">
+                                <p dir="ltr" class="m-0" data-attr="phone-text">+966 50 225 2450</p>
+                            </a>
+                        </div>
+                        <div class="d-flex justify-content-start align-items-center gap-3 mb-4">
+                            <img src="../img/email icon.svg" alt="photo" data-attr="email-icon">
+                            <a href="mailto:manilaw@mani-law.com" target="_blank" class="text-decoration-none" >
+                                <p class="m-0" data-attr="email-text">manilaw@mani-law.com</p>
+                            </a>
+                        </div>
+                        <div class="d-flex justify-content-start align-items-center gap-3 mb-4">
+                            <img src="../img/globe icon.svg" alt="photo" data-attr="website-icon">
+                            <a href="https://www.mani-law.com/" target="_blank" class="text-decoration-none"><p class="m-0" data-attr="website-text">www.mani-law.com</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="rights d-flex align-items-center justify-content-between mt-3  ">
+                <p>كل الحقوق محفوظة &copy; 2024</p>
+                <p><span ><<</span>  Developed by <span ><<</span> <span class="name"> <a href="https://www.linkedin.com/company/brillianttrend/" target="_blank" class="text-decoration-none">Brilliant Trend</a> </span> </p>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer  -->
+<!-- الوا��هة الأخيرة -->
+<!-- روابط jQuery و Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+<!-- sweet fire alert cdn  -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- Axios CDN -->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<!-- external file js  -->
+<script src="../JS/common-questions.js"></script>
+
+</body>
+</html>

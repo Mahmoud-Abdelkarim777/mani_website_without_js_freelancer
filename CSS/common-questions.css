@@ -1,0 +1,183 @@
+/* Import google font  */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Tajawal", sans-serif;
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    background-color: #F8F9FA;
+    color: #333;
+    margin: 0;
+    text-align: right; 
+}
+
+.accordion-button {
+    display: flex;
+    width: 100%; 
+    padding: 12px 24px;
+    justify-content: space-between; 
+    align-items: center;
+    border-radius: 8px;
+    background:  #FDFDFF;
+    border: 1px solid  #5958B5;
+    color: #14123a; 
+    text-align: right;
+    font-size: 25px;
+    font-weight: 700;
+    /* line-height: 160%;  */
+    transition: background-color 0.3s;
+    
+}
+/* 1 */
+.accordion-button:not(.collapsed){
+    background: white !important;
+    color: #14123a; 
+}
+
+/* 2 */
+.accordion-button:focus {
+    border: none !important; 
+    box-shadow: none; 
+    background-color: #2F2B73 !important;
+    color: white;
+}
+/* .accordion-button:hover {
+background: #2F2B73;
+color: #fff;
+} */
+
+.accordion-button i {
+    margin-left: 10px; 
+    
+}
+
+
+.rotate {
+transform: rotate(270deg); 
+transition: transform 0.3s; 
+}
+.card {
+    margin-bottom: 24px; 
+    border: none;
+}
+
+.card-header {
+    padding: 0; 
+    border: none; 
+}
+
+.card-body {
+    background-color: #fff;
+    padding: 20px;
+    border-top: none;
+    border-radius: 5px;
+    border: 1px solid #000;
+    font-size: 25px;
+}
+
+
+.accordion-button:focus {
+    outline: none; 
+    box-shadow: none; 
+}
+
+.heropara{
+color: #2F2B73;
+font-weight: 700;
+font-size: 39px;
+margin-top: 154px;
+margin-bottom: 70px;
+}
+.card-body p {
+    color: #14123A;
+}
+.accordion-button::after{
+    display: none;
+}
+@media (min-width:768px) and (max-width:992px) {
+    .heropara{
+        font-size: 25px;
+        margin-top: 105px;
+        margin-bottom: 38px;
+        }
+        .card-body {
+            margin-bottom: 24px;
+        }
+    .search-box .form-control {
+        font-size: 23px;
+    }
+    .search-icon {
+        font-size: 24px; 
+    }
+    .search-box {
+        margin-top: 72px;
+        margin-bottom: 5rem;
+    }
+    .card {
+        margin-bottom: 0px; 
+    }
+    .accordion-button {
+        font-size: 25px;
+        padding: 8px 24px;
+    }
+    .card-body h5 {
+        font-size: 25px;
+    }
+    .card-body p {
+        font-size: 20px;
+        text-align: right;
+        color: #14123A;
+    }
+}
+@media (max-width:768px) {
+    .content{
+        margin-bottom: 20px;
+    }
+    .heropara{
+        font-size: 18px;
+        margin-top: 100px;
+        margin-bottom: 33px;
+    }
+    .card {
+        margin-bottom: 0px; 
+    }
+    .card-header {
+        padding: 0; 
+        border: none; 
+        /* height: 20px; */
+    }
+    .search-box .form-control {
+        font-size: 16px;
+    }
+    .search-icon {
+        font-size: 16px; 
+    }
+    .search-box {
+        margin-top: 50px;
+        margin-bottom: 3rem;
+    }
+    
+    .accordion-button {
+        font-size: 13px;
+        padding: 8px 12px 8px 0;
+        margin-bottom: 16px !important;
+    }
+    .card-body{
+        margin-bottom: 16px ;
+    }
+    .card-body .txt {
+        font-size: 16px;
+    }
+    .card-body h5 {
+        font-size: 20px;
+    }
+    .card-body p {
+        font-size: 16px;
+        text-align: right;
+    } 
+}
+

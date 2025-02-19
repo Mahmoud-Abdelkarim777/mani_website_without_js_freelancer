@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- cdn slick css file  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap link css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    <!-- EXTERNAL FILE CSS  -->
+    <!-- external file css  -->
+    <link rel="stylesheet" href="../CSS/nav-footer.css">
+    <link rel="stylesheet" href="../CSS/about.css">
+    <title>عن الشركة</title>
+</head>
+<body>
+    <!-- start header  -->
+    <header class="header container">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
+            <div class="container ">
+                <a class="navbar-brand me-0" href="../index.html">
+                    <img src="../img/logo.svg" alt="photo">
+                </a>
+                <!-- Offcanvas Trigger Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center " id="navbarNav">
+                    <ul class="navbar-nav gap-2">
+                        <li class="nav-item">
+                            <a class="nav-link  " aria-current="page" href="../index.html">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-decoration-underline" href="./about.html">عن الشركة</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./services.html">الخدمات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact-us.html">تواصل معنا</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="d-flex gap-5 info-lang">
+                    <!-- <div class="lang d-flex align-items-center gap-1">
+                        <p class="mb-0 language-en">English</p>
+                        <div class="global">
+                            <img src="./img/globe.svg" alt="global">
+                        </div>
+                    </div> -->
+                    <div>
+                        <a href="../pages/log-in.html" class="sign-up text-decoration-none text-dark border px-4 py-2">تسجيل الدخول</a>
+                    </div>
+                </div>
+                <div class="logo-md">
+                    <a href="../index.html">
+                        <img src="../img/logo.svg" alt="photo">
+                    </a>
+                </div>
+                <div class="register-md">
+                    <a href="../pages/log-in.html" class="sign-up text-decoration-none text-dark border  px-4 py-2 ">تسجيل الدخول</a>
+                </div>
+            </div>
+                <!-- Offcanvas Content -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">القائمة</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link  " aria-current="page" href="../index.html">الرئيسية</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-decoration-underline" href="../pages/about.html">عن الشركة</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/services.html">الخدمات</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/contact-us.html">تواصل معنا</a>
+                            </li>
+                            
+                        </ul>
+                        <!-- Language and Login Options -->
+                        <div class="d-flex gap-5 mt-3 Language-and-Login-Options">
+                            <div class="lang d-flex gap-1">
+                                <p class="mb-0 language-en">English</p>
+                                <div class="global">
+                                    <img src="./img/globe.svg" alt="global">
+                                </div>
+                            </div>
+                            
+                            <div class="mt-2">
+                                <a href="../pages/log-in.html" class="sign-up d-block d-md-none text-decoration-none text-dark border px-4 py-2">تسجيل الدخول</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- end header  -->
+    <!-- start hero  -->
+    <section class="hero">
+        <div class="container">
+            <div class="content d-flex flex-column-reverse flex-lg-row align-items-start align-items-lg-center  justify-content-between  ">
+                <div class="d-block d-md-none">
+                    <img src="../img/women-sm.svg" class="w-100" alt="photo">
+                </div>
+                <div id="container-img-div">
+                    <div class="container-img position-relative">
+                        <div class="color position-absolute"></div>
+                        <img src="../img/woman.svg" class="position-absolute" alt="photo">
+                    </div>
+                </div>
+                <div id="container-word-div" class="w-50">
+                    <div class="container-word ">
+                        <h2 class="mb-3 mb-md-4 mb-lg-5">كلمة مؤسس الشركة</h2>
+                        <p class="mb-3 mb-md-4 mb-lg-4 ">إنَّ مـهـنــة الـمـحـامــاة لــيسـت مـجــرد عـمــلٍ بـــل هــي رســـالـــة سـامـيــــة تـمثــل الـقـيـم والــمبــادئ الـتــي يـسـعــى الإنــسـان للـحـفـــاظ عــلـيــهــــــــــا. 
+                        </p>
+                        <p class="mb-3 mb-md-4 mb-lg-4 ">في شركتنــا، نــؤمـن أن العــدالــة لـيسـت هـدفًـا فقــط، بـــل هـــي الــتـــزام نــكـرســـه فــي كــل خــطـوة نـخـطــوهــــــــــــا.
+                        </p>
+                        <p class="mb-3 mb-md-4 mb-lg-4 ">نحــن نُـعـلـي رايـــة الـحــق، ونــدافــع عــن الـمـظلـوم، ونـقــف بثـبـــات أمــام الـتـحديـات القـانـونــيـة التـي تــواجـه عـمـلائنـا.
+                        </p>
+                        <p id="main-text" class="mb-3 mb-md-4 mb-lg-4 ">خبرتنــا الممـتـدة فـي سـاحـة القـانـون جعـلتنا نتميز بفهمٍ عميقٍ ودقيق لكـل قـضيــة نتـصـدى لـهـا، فـنـحـن لا نكتفي بحل المشكلات بل نعمل علـى بـنـاء استـراتيـجـيـات قـانـونيـة قـوية تـحـفـظ حـقـوقــك.
+                            <a href="#" id="toggle-more" style="color: #14123A;">أقرأ المزيد</a>  
+                        </p>
+                        <p class="mb-3 mb-md-4 mb-lg-4 extra-text" style="display: none;" >
+                            التزامنا الكامل بخدمة عملائنا جعلنا نصنع من كل قضية نجاحًا نضيفه إلى سجل إنجازاتنا.
+                        </p>
+                        <p class="mb-0 mb-md-0 mb-lg-0 extra-text" style="display: none;" >
+                            نحن هنا لنكون درعك القانوني، وصوتك في المحاكم، والمستشار الذي تثق به في كل قرار.
+                        </p>
+                        <!-- رابط "عرض أقل" الذي سيظهر بعد "أقرأ المزيد" -->
+                        <p id="show-less" style="display: none;">
+                            <a href="#" id="toggle-less" style="color: #14123A;">عرض أقل</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end hero  -->
+    <!-- start section view  -->
+    <section class="view position-relative mt-5 pt -4">
+        <div class="position-absolute" id="img-view">
+            <img src="../img/logo-view.jpg" alt="photo">
+        </div>
+        <div class="container">
+            <div class="content">
+                <div class="content-item d-flex gap-3 mb-4">
+                    <div class="img position-relative" >
+                        <img src="../img/الرؤية.svg" class="" alt="photo">
+                        <div class="line position-absolute  ">
+                            <img src="../img/Line 13.svg" class="line-img" alt="photo">
+                        </div>
+                    </div>
+                    <div>
+                        <h2>رؤيـتـنــــــا</h2>
+                        <p id="p">نتطلع في "ماني" إلى تحقيق الريادة العالمية في الحلول القانونية الشاملة، متجاوزين حدود التميز لنصبح مرجعاً رائدًا في جميع المجالات القانونية. مدعومين بفريق متميز، نسعى للوصــول لأعــلى المعايير المهنية وتلبية احتياجات عمـلائنــا بـاحتـرافيـة ودقــة. رؤيتنــا هي أن نـكــون الاســم الأول في العالم القانوني، ملهمين التغيير وقادة المستقبل بثقة وتميز.
+                        </p>
+                    </div>
+                </div>
+                <div class="content-item d-flex gap-3">
+                    <div class="img">
+                        <img src="../img/الرسالة.svg" class="" alt="photo">
+                    </div>
+                    <div>
+                        <h2>هــدفـنــــا</h2>
+                        <p>نلتزم في ماني للمحاماة بتقديم خدمات قانونية شاملة ترتكز على النزاهة والكفاءة نهدف إلى فهم احتيـاجـات عمـلائنـا وتقـديم حـلول قـانونية مصممة لحماية مصالحهم وتحقيق أهدافهم مع ضمان  دعم قانوني فعّال يواكب التحديات المتغيرة
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section view  -->
+    <!-- start section values -->
+    <section class="values mt-5">
+        <div class="container position-relative">
+            <div class="position-absolute start-1">
+                <img src="../img/pointer-h.svg" alt="photo">
+            </div>
+            <div class="position-absolute start-0">
+                <img src="../img/pointer-v.svg" alt="photo">
+            </div>
+            <div class="content pt-5">
+                <h2 class="text-center">قيمنــا الراسخــة</h2>
+                <div class="row mt-5">
+                    <div class="item col-lg-4 col-md-6 col-sm-12  mb-3 ">
+                        <div class="mb-3">
+                            <img src="../img/ميزان.svg" alt="photo">
+                        </div>
+                        <h3 class="mb-3">النزاهة والأمانة</h3>
+                        <p class="mb-3">
+                            نـلـتزم فـي "مـانـي للمحـامـاة" بـأعـلى مـعـاييــر النزاهة والأمانة، مستمدين ذلك من مبادئ الشريعة الإسلامية السمحة. نتعـامل مـع عمـلائنـا بشفـافيـة تـامـة
+                        </p>
+                    </div>
+                    <div class="item col-lg-4 col-md-6 col-sm-12  mb-3 ">
+                        <div class="mb-3">
+                            <img src="../img/toword.svg" alt="photo">
+                        </div>
+                        <h3 class="mb-3">الجودة والكفاءة</h3>
+                        <p class="mb-3">
+                            نسعى لتقديم خدمات قانونية متميزة بدقة وكفاءة عـاليـة عـبر فـريق متـخصص وخبرات واسـعة، لتـلبيـة تـطلعـات عمـلائنـا.
+                        </p>
+                    </div>
+                    <div class="item col-lg-4 col-md-6 col-sm-12  mb-3 ">
+                        <div class="mb-3">
+                            <img src="../img/heart.svg" alt="photo">
+                        </div>
+                        <h3 class="mb-3">تلبية احتياجات العملاء</h3>
+                        <p class="mb-3">نضع احتياجات العملاء في صدارة أولـوياتنا، ونلـتزم بتـقديـم حـلـول قـانـونيـة عـالية الجودة بسـرعـة وفعـاليـة لتـحقيـق النتائج المتوقعة
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section values -->
+    <!-- start section team work  -->
+    <section class="team mt-5 pb-2">
+        <h2 class="text-center">فريق العمل</h2>
+        <div class="container">
+            <div>
+                <div class="responsive-customs mt-3 ">
+                    <div class="p-2 d-flex justify-content-center  align-items-center ">
+                        <div class="box  d-flex justify-content-start  justify-content-md-center  justify-content-lg-center align-items-center position-relative">
+                            <div class="img-1 position-absolute bottom-0 start-0 ">
+                                <img src="../img/logo-team-1.svg" alt="photo">
+                            </div>
+                            <div class="img-2 position-absolute bottom-0 start-0 ">
+                                <img src="../img/logo-team-2.svg" alt="photo">
+                            </div>
+                            <div class="item-1">
+                                <h5>نهى المالكي </h5>
+                                <p class="mb-3 mb-md-2 mb-lg-3 ">(مستشار قانوني)</p>
+                                <div class="txt d-flex align-items-center  gap-2 mb-2 mb-md-0 mb-lg-3">
+                                    <img style="width: 16px;" src="../img/check.svg" alt="photo">
+                                    <p class="mb-0">
+                                        مـاجـستير من الـمعهد العــالي للقضــاء
+                                    </p>
+                                </div>
+                                <div class="txt d-flex align-items-center  gap-2 mb-2 mb-md-0 mb-lg-3">
+                                    <img style="width: 16px;" src="../img/check.svg" alt="photo">
+                                    <p class="mb-0">
+                                        ماجستير في القانون من جامعة إنديانا
+                                    </p>
+                                </div>
+                                <div class="txt d-flex align-items-center  gap-2 mb-2 mb-md-0 mb-lg-3">
+                                    <img style="width: 16px;" src="../img/check.svg" alt="photo">
+                                    <p class="mb-0">
+                                        دكتوراة في علوم القـانون جامعة إنديانا
+                                    </p>
+                                </div>
+                                <div class="d-flex align-items-start  gap-2 "mb-3>
+                                    <img style="width: 16px;" src="../img/check.svg" alt="photo">
+                                    <p class="mb-0">
+                                        يمـلك خـبرة تتجـاوز 8 سنـوات فـي مجال البحث والاستشارات القانونية
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section team work  -->
+    <!-- <div  style="height: 50vh; margin-top: 7rem;"></div> -->
+    <!-- start footer  -->
+    <footer class="footer position-relative">
+        <div class="background position-absolute top-50 start-50 " style="background-color:  #1C1A4E;">
+            <img src="../img/logo-footer-lg.svg" alt="photo">
+        </div>
+        <div class="container">
+            <div class="content d-flex justify-content-between align-items- center   flex-md-row flex-lg-row   position-relative ">
+                <div class="footer-comunication mb-5">
+                    <div class="footer-logo mb-4">
+                        <img class="w-100" src="../img/logo-footer.svg" alt="photo">
+                    </div>
+                    <div class="icons">
+                        <a href="https://wa.me/966502252450" class="text-decoration-none ">
+                            <img src="../img/whats.svg" alt="photo" class="icon mb-md-3 mb-lg-3 mb-sm-0 me-0">
+                        </a>
+                        <a  href="https://x.com/manilawsa" target="_blank" class="text-decoration-none ">
+                            <img src="../img/twitter.svg" alt="photo" class="icon mb-md-3 mb-lg-3 mb-sm-0 me-2">
+                        </a>
+                        <a href="https://www.linkedin.com/company/mani-lawsa/?viewAsMember=true" target="_blank" class="text-decoration-none ">
+                            <img src="../img/linkidin.svg" alt="photo" class="icon mb-md-3 mb-lg-3 mb-sm-0 me-2">
+                        </a>
+                        <a href="https://www.facebook.com/mani.lawsa" target="_blank" class="text-decoration-none ">
+                            <img src="../img/facebook.svg" alt="photo" class="icon me-2 me-md-0">
+                        </a>
+                        <a href="https://www.instagram.com/manilawsa?igsh=MXI1MWR0bDhscHhueQ==" target="_blank" class="text-decoration-none ">
+                            <img src="../img/insta.svg" alt="photo" class="icon me-2">
+                        </a>
+                        <a href="https://www.tiktok.com/@mani.lawsa" target="_blank" class="text-decoration-none ">
+                            <img src="../img/tictok.svg" alt="photo" class="icon me-2">
+                        </a>
+                    </div>
+                </div>
+                <div class="">
+                    <h4 class="mb-4 mb-md-5" data-attr="quick-links-title">روابط سريعة</h4>
+                    <div class="4 d-flex flex-column ">
+                        <a href="../index.html" class="text-decoration-none mb-4 " data-attr="link-home"><p class="mb-0">الرئيسية</p></a>
+                        <a href="./about.html" class="text-decoration-none mb-4  " data-attr="link-about"><p class="mb-0">عن الشركة</p></a>
+                        <a href="./services.html" class="text-decoration-none mb-4  " data-attr="link-services"><p class="mb-0">الخدمات</p></a>
+                        <a href="./contact-us.html" class="text-decoration-none mb-4  " data-attr="link-contact"><p class="mb-0">تواصل معنا</p></a>
+                        <a href="./common-questions.html" class="text-decoration-none mb-4  " data-attr="link-contact"><p class="mb-0">الأسئلة الشائعة</p></a>
+                    </div>
+                </div>
+                <div class="">
+                    <h4 class="mb-4 mb-md-5" data-attr="contact-info-title">معلومات الاتصال</h4>
+                    <div class="d-flex flex-column  ">
+                        <div class="d-flex justify-content-start align-items-center gap-3 mb-4">
+                            <img src="../img/location icon.svg" alt="photo" data-attr="location-icon">
+                            <p class="m-0" data-attr="location-text">الـــــرياض - الخبــــــر - جــــــــدة</p>
+                        </div>
+                        <div class="d-flex justify-content-start align-items-center gap-3 mb-4">
+                            <img src="../img/phone icon.svg" alt="photo" data-attr="phone-icon">
+                            <a href="https://wa.me/966502252450" class="text-decoration-none" target="_blank" data-attr="phone-link">
+                                <p dir="ltr" class="m-0" data-attr="phone-text">+966 50 225 2450</p>
+                            </a>
+                        </div>
+                        <div class="d-flex justify-content-start align-items-center gap-3 mb-4">
+                            <img src="../img/email icon.svg" alt="photo" data-attr="email-icon">
+                            <a href="mailto:manilaw@mani-law.com" target="_blank" class="text-decoration-none" >
+                                <p class="m-0" data-attr="email-text">manilaw@mani-law.com</p>
+                            </a>
+                        </div>
+                        <div class="d-flex justify-content-start align-items-center gap-3 mb-4">
+                            <img src="../img/globe icon.svg" alt="photo" data-attr="website-icon">
+                            <a href="https://www.mani-law.com/" target="_blank" class="text-decoration-none"><p class="m-0" data-attr="website-text">www.mani-law.com</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="rights d-flex align-items-center justify-content-between mt-3  ">
+                <p>كل الحقوق محفوظة &copy; 2024</p>
+                <p><span ><<</span>  Developed by <span ><<</span> <span class="name"> <a href="https://www.linkedin.com/company/brillianttrend/" target="_blank" class="text-decoration-none">Brilliant Trend</a> </span> </p>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer  -->
+    <!-- bootstrap link js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    <!-- EXTERNAL FILE js  -->
+    <!-- cdn js file  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.5.2/jquery-migrate.min.js" integrity="sha512-BzvgYEoHXuphX+g7B/laemJGYFdrq4fTKEo+B3PurSxstMZtwu28FHkPKXu6dSBCzbUWqz/rMv755nUwhjQypw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../JS/about.js"></script>
+    <!-- sweet fire alert cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Axios CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>
+
+

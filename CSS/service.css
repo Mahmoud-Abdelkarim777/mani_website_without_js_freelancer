@@ -1,0 +1,186 @@
+/* Import google font  */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Tajawal", sans-serif;
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    background-color: #F8F9FA;
+    color: #333;
+    /* margin: 0; */
+    /* padding: 20px; */
+    text-align: right; 
+}
+/* 3  */
+.accordion-button {
+    display: flex;
+    width: 100%; 
+    padding: 8px 24px;
+    justify-content: space-between; 
+    align-items: center;
+    border-radius: 8px;
+    background:  #fff !important;
+    border: 1px solid  #5958B5;
+    color: #2F2B73 !important; 
+    text-align: right;
+    font-size: 31px;
+    font-weight: 700;
+    /* line-height: 160%;  */
+    transition: background-color 0.3s;
+}
+/* 1 */
+.accordion-button:not(.collapsed){
+    background: white !important;
+}
+
+/* 2 */
+.accordion-button:focus {
+    border: none !important; 
+    box-shadow: none; 
+    background-color: #ECECF7 !important;
+}
+
+.accordion-button i {
+    margin-left: 10px; 
+    
+}
+
+
+.rotate {
+transform: rotate(270deg); 
+transition: transform 0.3s; 
+}
+.card {
+    margin-bottom: 50px; 
+    border: none;
+}
+
+.card-header {
+    padding: 0; 
+    border: none; 
+}
+
+.card-body {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #E0E0E0;
+    border-top: none;
+    border-radius: 8px;
+}
+.card-body .txt {
+    font-size: 25px;
+    font-weight: 400;
+    text-align: right;
+}
+.card-body h5 {
+    font-size: 25px;
+    font-weight: 500;
+}
+.card-body p {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 3rem;
+}
+
+
+
+.search-box {
+    margin-top: 100px;
+    position: relative;
+    margin-bottom: 6rem;
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid var(--primary-300, #9A98D6);
+    background: #FFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.search-box .form-control {
+border: none;
+outline: none;
+flex-grow: 1; 
+font-size: 23px;
+padding: 8px;
+color: #333; 
+background: transparent;
+width: 100%;
+}
+.search-box .form-control:focus {
+outline: none; 
+box-shadow: none; 
+}
+.search-icon {
+position: absolute;
+left: 12px; 
+color: #9A98D6; 
+font-size: 24px; 
+top: 50%; 
+transform: translate(50%, -50%);
+}
+
+.accordion-button::after{
+    display: none;
+}
+@media (min-width:768px) and (max-width:992px) {
+    .search-box .form-control {
+        font-size: 23px;
+    }
+    .search-icon {
+        font-size: 24px; 
+    }
+    .search-box {
+        margin-top: 72px;
+        margin-bottom: 5rem;
+    }
+    .card {
+        margin-bottom: 41px; 
+    }
+    .accordion-button {
+        font-size: 25px;
+        padding: 8px 24px;
+    }
+    .card-body h5 {
+        font-size: 25px;
+    }
+    .card-body p {
+        font-size: 20px;
+        text-align: right;
+    }
+}
+@media (max-width:768px) {
+    .search-box .form-control {
+        font-size: 16px;
+    }
+    .search-icon {
+        font-size: 16px; 
+    }
+    .search-box {
+        margin-top: 50px;
+        margin-bottom: 3rem;
+    }
+    .card {
+        margin-bottom: 28px; 
+    }
+    .accordion-button {
+        font-size: 15px;
+        padding: 8px 12px 8px 0;
+    }
+    .card-body .txt {
+        font-size: 16px;
+    }
+    .card-body h5 {
+        font-size: 20px;
+    }
+    .card-body p {
+        font-size: 16px;
+        text-align: right;
+    } 
+}

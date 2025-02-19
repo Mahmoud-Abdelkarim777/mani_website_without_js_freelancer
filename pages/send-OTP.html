@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- bootstrap link css -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    
+        <!-- font Awesome link  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- external file css  -->
+        <!-- <link rel="stylesheet" href="../CSS/nav-footer.css"> -->
+        <link rel="stylesheet" href="../CSS/log-in.css">
+        <title>شركة ماني للمحاماة</title>
+        <style>
+#OTP-form input {
+        text-align: center;
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        font-weight: bold;
+        border-radius: 16px;
+        border: 1px solid  #2F2B73;
+        background-color: #ECECF7;
+}
+
+#OTP-form input:focus {
+        border-color: #2F2B73;
+        outline: none;
+        box-shadow: 0 0 5px #2F2B73
+}
+
+
+
+        </style>
+</head>
+<body>
+        
+        <!-- start log in section -->
+        <section class="container">
+                <div class="content d-flex align-items-center justify-content-center ">
+                        <div class="form d-flex flex-column p-3 my-5">
+                                <div class=" d-flex align-items-center justify-content-center mb-5">
+                                        <img src="../img/logo-md.svg" alt="photo">
+                                </div>
+                                <div style="margin-bottom: 40px;">
+                                        <h2 class="text-center mb-3">إعادة تعيين كلمة المرور</h2>
+                                        <p class="text-center mb-1" style="color: #2F2B73;">
+                                                تحقق من بريدك الإلكتروني، لقد أرسلنا رمزاً إلى
+                                        </p>
+                                        <p class="text-center" style="color: #2F2B73;" id="getemail">
+                                                
+                                        </p>
+                                </div>
+                                <form id="OTP-form"  novalidate>
+                                        <div class="log-in d-flex flex-column mb-5">
+                                                <div class="d-flex flex-row-reversr justify-content-center gap-3 mb-5">
+                                                        <!-- مربعات إدخال الرمز -->
+                                                        <input type="text" class="rounded text-center otp-box" maxlength="1" required >
+                                                        <input type="text" class="rounded text-center otp-box" maxlength="1" required >
+                                                        <input type="text" class="rounded text-center otp-box" maxlength="1" required >
+                                                        <input type="text" class="rounded text-center otp-box" maxlength="1" required >
+                                                </div>
+                                        </div>
+                                        <div class="submit d-flex justify-content-center align-items-center" style="margin-bottom: 90px;">
+                                                
+                                                        <button type="submit" class="px-4 py-2 rounded-3" style="font-size: 20px; font-weight: 700;">تأكيد</button>
+                                                
+                                        </div>
+                                </form>                                    
+                        </div>
+                </div>
+        </section>
+        <!-- end log in section -->
+        <!-- bootstrap link js -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <!-- sweet fire alert cdn  -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <!-- Axios CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="../JS/send-OTP.js"></script>
+</body>
+</html>
